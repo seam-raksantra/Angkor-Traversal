@@ -1,14 +1,24 @@
 services:
   - type: web
-    name: solsanvoyages-laravel
+    name: tourism-api
     env: php
-    buildCommand: |
-      composer install --no-dev --optimize-autoloader
-      php artisan migrate --force
-    startCommand: php artisan serve --host=0.0.0.0 --port=10000
     plan: free
+    buildCommand: "composer install && php artisan migrate --force"
+    startCommand: "php artisan serve --host 0.0.0.0 --port 10000"
     envVars:
       - key: APP_ENV
         value: production
-      - key: APP_DEBUG
-        value: false
+      - key: APP_KEY
+        value: base64:zfB9sux5G3cIqua19KDtRFUWaGDEaTYSlD0MTMtMx7E=
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: shortline.proxy.rlwy.net
+      - key: DB_PORT
+        value: 46913
+      - key: DB_DATABASE
+        value: railway
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        value: HcUUDngwhSnIcCxuiFdgjOMgbSHASirf
