@@ -23,6 +23,6 @@ class PackageController extends Controller
             $places->where('name', 'LIKE', '%' . $search . '%');
         }
         $places = $places->get();
-        return view('packages.index', compact('provinces', 'places'));
+        return view('packages', compact('provinces', 'places'));
     }
 }
