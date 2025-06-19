@@ -25,9 +25,9 @@ Route::get('/dashboard', function () {
 Route::get('/about', [PageController::class, 'about'])->name('about');
 
 // Admin dashboard route — update route name to admin.dashboard and path to /admin/dashboard for consistency
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
-    ->middleware('auth')
-    ->name('admin.dashboard');
+// Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
+//     ->middleware('auth')
+//     ->name('admin.dashboard');
 
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
@@ -54,7 +54,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Places routes
-Route::get('/places/{id}', [PlaceController::class, 'show'])->name('places.show');
+// Route::get('/places/{id}', [PlaceController::class, 'show'])->name('places.show');
 Route::get('/places/{place}', [PlaceController::class, 'show'])->name('places.show');
 
 // Packages route
