@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Angkor Traversal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
+<style>
     .place-card:hover {
       background-color:  #fdf9f2 !important;
       transform: translateY(-5px);
@@ -105,8 +97,6 @@
     }
 
   </style>
-</head>
-<body>
 @extends('layouts.app')
   @section('content')
   {{-- Hero Carousel --}}
@@ -323,5 +313,3 @@
     });
   </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
