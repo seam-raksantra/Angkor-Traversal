@@ -51,7 +51,7 @@
         <ul class="list-unstyled">
           <li><a href="{{ route('home') }}">Home</a></li>
           <li><a href="{{ route('about') }}">About</a></li>
-          <li><a href="{{ route('packages.index') }}">Packages</a></li>
+          <li><a href="{{ route('packages) }}">Packages</a></li>
         </ul>
       </div>
       <!-- Contact Info -->

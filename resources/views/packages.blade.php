@@ -135,7 +135,7 @@
   <section class="container mb-5">
     <div class="row align-items-center g-3">
       {{-- Search Input --}}
-      <form method="GET" action="{{ route('packages.index') }}" class="col-md-9">
+      <form method="GET" action="{{ route('packages') }}" class="col-md-9">
         <div class="input-group input-group-md position-relative">
           <input type="text" name="search" class="form-control ps-5 py-2 rounded fw-secondary" placeholder="Search for a package..." value="{{ request('search') }}" style="height: 45px;">
           <span class="position-absolute top-50 start-0 translate-middle-y ps-3 text-muted">
@@ -153,12 +153,12 @@
           <ul class="dropdown-menu w-100" aria-labelledby="provinceDropdown" style="max-height: 300px; overflow-y: auto;">
             {{-- All option --}}
             <li>
-              <a class="dropdown-item" href="{{ route('packages.index') }}">All</a>
+              <a class="dropdown-item" href="{{ route('packages') }}">All</a>
             </li>
             {{-- Provinces --}}
             @foreach($provinces as $province)
               <li>
-                <a class="dropdown-item" href="{{ route('packages.index', ['province' => $province->id]) }}">
+                <a class="dropdown-item" href="{{ route('packages', ['province' => $province->id]) }}">
                   {{ $province->name }}
                 </a>
               </li>

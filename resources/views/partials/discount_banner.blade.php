@@ -29,7 +29,7 @@
           for your first<br>
           Booking.
         </h2>
-        <a href="{{ route('packages.index') }}" class="btn btn-warning text-uppercase fw-bold">
+        <a href="{{ route('packages') }}" class="btn btn-warning text-uppercase fw-bold">
           Book Now
         </a>
       </div>
