@@ -7,10 +7,10 @@
     <!-- Left Column: Image + Back Button -->
     <div class="col-md-6">
       @php
-        $backUrl = route('packages');
+        $backUrl = route('packages.index');
         if (request()->has('from')) {
           switch (request()->get('from')) {
-            case 'packages': $backUrl = route('packages'); break;
+            case 'packages': $backUrl = route('packages.index'); break;
             case 'home': $backUrl = route('home'); break;
             case 'search': $backUrl = route('search.results'); break;
           }

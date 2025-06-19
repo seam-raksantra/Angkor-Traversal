@@ -72,7 +72,7 @@
         <a class="nav-link" href="{{ route('home') }}">Home</a>
         <li class="nav-item mx-2"><a class="nav-link" href="{{ route('about') }}">About</a></li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="{{ route('packages') }}">Packages</a>
+          <a class="nav-link" href="{{ route('packages.index') }}">Packages</a>
         </li>
       </ul>
     </div>

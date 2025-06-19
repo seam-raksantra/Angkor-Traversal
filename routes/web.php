@@ -58,7 +58,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/places/{place}', [PlaceController::class, 'show'])->name('places.show');
 
 // Packages route
-Route::get('/packages', [PackageController::class, 'packages'])->name('packages');
+Route::get('/packages', [PackageController::class, 'index'])->name('packages.index');
 Route::post('/rate', [RatingController::class, 'store'])->name('rate.store');
 
 // Admin Bookings routes for CRUD actions

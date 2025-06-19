@@ -83,7 +83,7 @@
   </div>
 
   <div class="text-center text-uppercase fw-bold my-4">
-    <a href="{{ route('packages') }}" class="btn btn-warning btn-sm px-4">
+    <a href="{{ route('packages.index') }}" class="btn btn-warning btn-sm px-4">
       View More..
     </a>
   </div>
